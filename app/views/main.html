@@ -1,0 +1,39 @@
+<div class="header">
+    <ul class="nav nav-pills pull-right">
+        <li class="active"><a ng-href="#">Home</a></li>
+        <li><a ng-href="#">About</a></li>
+        <li><a ng-href="#">Contact</a></li>
+    </ul>
+    <h3 class="text-muted">PW Creator</h3>
+</div>
+
+<div>
+    <form role="form">
+        <div class="form-group">
+            <label for="masterPassword">Master password</label>
+            <input type="password" class="form-control" id="masterPassword" ng-model="password" placeholder="Master password">
+        </div>
+        <div class="form-group">
+            <label for="service">Service</label>
+            <input type="password" class="form-control" id="service" ng-model="service" placeholder="Service">
+        </div>
+        <button class="btn btn-primary pull-right" type="submit" ng-click="generatePassword()">Skapa</button>
+    </form>
+    <div class="panel panel-body">
+        <table class="pwcrt-result table table-striped table-bordered">
+            <thead>
+            <tr>
+                <th>Tjänst</th>
+                <th>Lösenord</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="(service, password) in items">
+                <td>{{service}}</td>
+                <td>{{password}} <a href="#" class="pull-right" ng-click="remove(service)"><span
+                        class="glyphicon glyphicon-trash"></span></a></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
