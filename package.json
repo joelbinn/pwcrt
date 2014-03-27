@@ -1,7 +1,9 @@
 {
   "name": "pwcrt",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "connect": "^2.14.3"
+  },
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-autoprefixer": "~0.4.0",
