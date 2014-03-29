@@ -1,7 +1,11 @@
 pwcrt
 =====
-Start:
+To run it
 
-    node server.js
+    $ npm install
+    $ bower install
+    $ grunt
+    $ cd dist
+    $ node server.js
     
-then surf to http://localhost:4711/dist
+then http://localhost:4711 in browser
