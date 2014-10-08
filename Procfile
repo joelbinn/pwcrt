@@ -1,1 +1,1 @@
-web: cd dist; node server.js
+web: npm install; grunt; cd dist; node server.js
